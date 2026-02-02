@@ -18,23 +18,9 @@ The project uses the **SMS Spam Collection Dataset**.
 
 Ensure you have Python 3.8+ installed.
 
-### 2. Install Standard Libraries
-
-All standard dependencies are listed in `requirements.txt`.
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Install SMAC3
+### 2. Install SMAC3
 
 SMAC3 is the key requirement for the AutoML portion of this project.
-
-**Standard Install:**
-
-```bash
-pip install smac
-```
 
 **Note for Google Colab / Linux users:**
 SMAC depends on `swig` for its Random Forest backend. If you encounter installation errors, run:
@@ -42,12 +28,19 @@ SMAC depends on `swig` for its Random Forest backend. If you encounter installat
 ```bash
 sudo apt-get update
 sudo apt-get install swig
-pip install smac
 ```
 
 For other installation options, please refer to the [official documentation](https://automl.github.io/SMAC3/main/1_installation/).
 
 > **WARNING:** `SMAC` is currently only available to **windows users through WSL** and on an experimental as-is installation. For more information, see [this section](https://automl.github.io/SMAC3/main/10_experimental/) of the documentation.
+
+### 3. Install Standard Libraries
+
+All standard dependencies are listed in `requirements.txt`.
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Hyperparameter Configuration Space
 
